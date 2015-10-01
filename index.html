@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My mobile page!</title>
+	
+	<link rel="stylesheet" href="themes/mytheme1.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+       
+
+</head>
+<body>
+	<div data-role="panel" id="menu" data-theme="d">
+	<h1>Menu</h1>
+	<ul data-role="listview">
+	<li><a href="#register">Register</li></a>
+	<li><a href="#login">Login</li></a>
+	<li><a href="#page1">Home</li></a>
+	</ul>
+	<br>
+	<br>
+	<center><img src="images/gamezone2.png"></img></center>
+	</div>
+	<div data-role="page" id="page1" data-theme="d">
+		<div data-role="header">
+		
+			<h1>Gamezone</h1>
+			
+			<div data-role="navbar">
+		<ul>
+			<li><a href="#menu" data-transition="slide" data-icon="grid">Menu</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+			
+		</ul>
+		</div>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			<center><img src="images/gamezone2.png"></img></center>
+			<p>Browse our top games by genre</p>
+			
+			<ul data-role="listview" data-inset="true" >
+				<li><a href="#page4" data-transition="flip"> <img src="images/action.jpg" width = "100%" height ="100%"/> <h3>Action/Adventure<br></h3></a></li>
+				<li><a href="#page5" data-transition="flip"> <img src="images/rpg.jpg" width = "100%" height ="100%"/> <h3>RPG's<br></h3></a></li>
+				<li><a href="#page6" data-transition="flip"> <img src="images/sports.png" width = "100" height ="100"/> <h3>Sports Titles<br></h3></a></li>
+				<li><a href="#page7" data-transition="flip"> <img src="images/shooter.jpg" width = "100%" height ="100%"/> <h3>Shooters<br></h3></a></li>
+
+			</ul>
+			
+			
+			
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+	
+	</div>
+	<!--Page 2-->
+	<div data-role="page" id="page2" data-theme="d">
+		<div data-role="header" data-position="fixed">
+			<h1>Contact</h1>
+			<a href="#page1" data-icon="arrow-l" class="ui-btn-left">Back</a>
+		</div>
+		
+		
+		<div data-role="main" class="ui-content">
+				<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+			
+		</ul>
+				</div>
+			<h1>Contact Us</h1>
+		
+			<form>
+				<label for="essay">Rate Us</label>
+				<textarea name="essay" id="essay" placeholder="Tell us what you think"></textarea>
+				<label for="rate">Rate this app out of 10</label>
+				<input type="range" name="rate" id="rate"min="0" max="10" />
+				<input type="submit" name="go" id="go" value="Submit" />
+				
+			</form>
+
+
+
+			<a href="#page1"data-transition="pop" >Page 1</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+			
+		</div>
+	
+		</div>
+	</div>
+	
+	<div data-role="page" id="page3" data-add-back-btn="true" data-theme="d">
+		<div data-role="header">
+			
+			<h1>Location</h1>
+			<a data-inline="true"data-icon="arrow-l" data-theme="d" data-role="button" href="#page1">Back</a>
+				<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+			
+		</ul>
+				</div>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+		<p><img src="http://maps.googleapis.com/maps/api/staticmap?center=53.278671,-9.010464&zoom=15&size=300x300&markers=color:red%7Clabel:A%7C53.278671,-9.010464&maptype=roadmap18&sensor=true"></p>
+		
+		
+		<p>We are located at GMIT Galway</p>
+		<p>Address: Ballybane Road<br>Galway</p>
+		<p>Phone No: 091-522222</p>
+		</div>
+		
+	
+		<div data-role="footer">
+		<a href="#page1" data-icon="home">Home</a>
+			<h2>&copy; Gamezone 2014 </h2>
+		</div>
+	</div>
+	<!--Page 4-->
+	<div data-role="page" id="page4" data-theme="d">
+		<div data-role="header">
+			<h1>Action/Adventure</h1>
+			<a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+			
+			<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+		</ul>
+			</div>
+		
+		</div>
+		<div data-role="content">
+		<ul>
+				<img src="images/uncharted.jpg" height="50%" width="50%"/> 
+				<h3>Uncharted 3</h3>
+				
+				<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Naughty Dog</p>
+			<p><b>Year Of Release</b>: 2011</p>
+			<p><b>Score:</b> 9/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Uncharted-Drakes-Deception-Game-Playstation-3/dp/B008CP6RUW/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717103&sr=1-1&keywords=uncharted+3">Buy Now</a>	
+			</div>
+			<img src="images/ACIV.jpg" height="50%" width="50%"/> 
+				<h3>Assassin's Creed IV: Black Flag</h3>
+				
+				<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Ubisoft</p>
+			<p><b>Year Of Release</b>: 2013</p>
+			<p><b>Score:</b> 8.5/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Assassins-Creed-Black-Limited-360-Xbox/dp/B00DYDE0X8/ref=sr_1_3?s=videogames&ie=UTF8&qid=1417717302&sr=1-3&keywords=assassins+creed+4">Buy Now</a>	
+			</div>
+			<img src="images/masseffect3.png" height="58%" width="55%"/> 
+				<h3>Mass Effect 3</h3>
+				
+				<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Bioware</p>
+			<p><b>Year Of Release</b>: 2011</p>
+			<p><b>Score:</b> 9/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Effect-Digital-Deluxe-Version-Download/dp/B0064TYRAU/ref=sr_1_3?s=videogames&ie=UTF8&qid=1417717399&sr=1-3&keywords=mass+effect+3">Buy Now</a>	
+			</div>
+				
+		</ul>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+	</div>
+		
+		<!--Page 5-->
+	<div data-role="page" id="page5" data-theme="d">
+		<div data-role="header">
+			<h1>RPG's</h1>
+			<a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+			
+			<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+		</ul>
+			</div>
+		
+		</div>
+		<div data-role="content">
+		<ul>
+				<img src="images/finalfan.jpg" height="70%" width="65%"/> 
+				<h3>Final Fantasy VII</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Squaresoft</p>
+			<p><b>Year Of Release</b>: 1997</p>
+			<p><b>Score:</b> 8.5/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Final-Fantasy-VII-Playstation/dp/B00000JRSB/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717920&sr=1-1&keywords=final+fantasy+7">Buy Now</a>
+			</div>
+			<img src="images/skyrim.png" height="65%" width="65%"/> 
+				<h3>The Elder Scrolls V: Skyrim</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Bethesda Studios</p>
+			<p><b>Year Of Release</b>: 2011</p>
+			<p><b>Score:</b> 9.5/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Elder-Scrolls-V-Skyrim-Xbox-360/dp/B004HYK956/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717996&sr=1-1&keywords=skyrim">Buy Now</a>
+			</div>
+			<img src="images/dragon.jpg" height="70%" width="70%"/> 
+				<h3>Dragon's Dogma</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Capcom</p>
+			<p><b>Year Of Release</b>: 2012</p>
+			<p><b>Score:</b> 8/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Dragons-Dogma-Dark-Arisen-Playstation-3/dp/B00B59MXGY/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417718025&sr=1-1&keywords=dragons+dogma">Buy Now</a>
+			</div>
+				
+		</ul>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+	</div>
+		<!--Page 6-->
+	<div data-role="page" id="page6" data-theme="d">
+		<div data-role="header">
+			<h1>Sports</h1>
+			<a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+			
+			<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+		</ul>
+			</div>
+		
+		</div>
+		<div data-role="content">
+		<ul>
+				<img src="images/fifa15.jpg" height="70%" width="65%"/> 
+				<h3>FIFA 15</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> EA Sports</p>
+			<p><b>Year Of Release</b>: 2014</p>
+			<p><b>Score:</b> 9/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/FIFA-15-PlayStation-4/dp/B00KPY1GJA/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717828&sr=1-1&keywords=fifa+15">Buy Now</a>	
+			</div>
+			<img src="images/nbajam.jpg" height="75%" width="65%"/> 
+				<h3>NBA Jam</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Midway</p>
+			<p><b>Year Of Release</b>: 1993</p>
+			<p><b>Score:</b> 8.5/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/NBA-Jam-Sega-Genesis/dp/B00002STA0/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717793&sr=1-1&keywords=nba+jam+sega+genesis">Buy Now</a>	
+			</div>
+			<img src="images/basketbrawl.jpg" height="70%" width="70%"/> 
+				<h3>Basketbrawl Atari 7800</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Atari</p>
+			<p><b>Year Of Release</b>: 1990</p>
+			<p><b>Score:</b> 7/10</p><a data-icon="shop" data-theme="d" data-role="button" href="
+			http://www.amazon.com/Basketbrawl/dp/B0006TND8G/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417717480&sr=1-1&keywords=basketbrawl">Buy Now</a>
+			</div>
+				
+		</ul>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+
+
+	</div>
+	
+	<div data-role="page" id="page7" data-theme="d">
+		<div data-role="header">
+			<h1>Shooters</h1>
+			<a href="#page1" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+			
+			<div data-role="navbar" data-position="fixed">
+		<ul>
+			<li><a href="#page1" data-icon="home">Home</a></li>
+			<li><a href="#page2" data-icon="mail">Contact Us</a></li>
+			<li><a href="#page3" data-icon="location">Location</a></li>
+		</ul>
+			</div>
+		
+		</div>
+		<div data-role="content">
+		<ul>
+				<img src="images/cod4.jpg" height="70%" width="65%"/> 
+				<h3>Call Of Duty 4: Modern Warfare</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Infinity Ward</p>
+			<p><b>Year Of Release</b>: 2007</p>
+			<p><b>Score:</b> 9/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Call-Duty-Modern-Warfare-Xbox-360/dp/B0016B28Y8/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417718123&sr=1-1&keywords=call+of+duty+4">Buy Now</a>	
+			</div>
+			<img src="images/moh.jpg" height="75%" width="65%"/> 
+				<h3>Medal Of Honor</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b>Electronic Arts</p>
+			<p><b>Year Of Release</b>: 1999</p>
+			<p><b>Score:</b> 8/10</p>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/Medal-Honor-Playstation/dp/B00002R28F/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417718215&sr=1-1&keywords=medal+of+honor+ps1">Buy Now</a>	
+			</div>
+			<img src="images/goldeneye.jpg" height="70%" width="75%"/> 
+				<h3>GoldenEye 007</h3>
+				
+			<div data-role="collapsible">
+			<h1>Info</h1>
+			<p><b>Developer:</b> Rare</p>
+			<p><b>Year Of Release</b>: 1997</p>
+			<p><b>Score:</b> 10/10</p>
+			</div>
+			<a data-icon="shop" data-theme="d" data-role="button" href="http://www.amazon.com/GoldenEye-007-nintendo-64/dp/B00000DMAT/ref=sr_1_1?s=videogames&ie=UTF8&qid=1417716892&sr=1-1&keywords=goldeneye+007">Buy Now</a>	
+		</ul>
+		
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+
+
+	</div>
+	
+	<div data-role="page" id="register" data-theme="d">
+	<div data-role="header">
+			<h1>Register</h1>
+			
+			<a href="#menu" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+	</div>
+	<div data-role="content">
+	<label for="name">Username:</label>
+	<input id="name">
+	<label for="email">Email:</label>
+	<input id="email">
+	<a href="" data-theme="b" data-role="button">Register</a>
+
+	
+	</div>
+	<div data-role="footer">
+			<h2>&copy; Gamezone 2014 </h2>
+	</div>
+
+	
+	</div>	
+	<div data-role="page" id="login" data-theme="d">
+	<div data-role="header">
+			<h1>Login</h1>
+			<a href="#menu" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
+			
+	</div>
+	<div data-role="content">
+	<label for="name">Username:</label>
+	<input id="name">
+	<label for="password">Password:</label>
+	<input id="password">
+	<a href="" data-theme="b" data-role="button">Log In</a>
+	
+	
+	</div>
+	
+	<div data-role="footer">
+			<h2>&copy; Gamezone 2014</h2>
+		</div>
+</div>
+
+
+
+	
+	
+</body>
+</html>

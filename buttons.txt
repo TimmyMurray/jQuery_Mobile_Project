@@ -1,0 +1,3 @@
+<a data-inline="true"data-icon="arrow-l" data-theme="d" data-role="button" href="#page1">Back</a>
+		<a data-icon="shop" data-theme="d" data-role="button" href="#page1">Buy Now</a>
+		<div data-role="main" class="ui-content">
